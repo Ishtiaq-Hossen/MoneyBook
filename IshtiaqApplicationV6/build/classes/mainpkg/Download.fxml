@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="813.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DownloadController">
+   <children>
+      <Button layoutX="1059.0" layoutY="751.0" mnemonicParsing="false" onMouseClicked="#downloadButtonOnClick" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: white;" text="Download pdf">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TableView fx:id="tableView" layoutX="37.0" layoutY="25.0" prefHeight="634.0" prefWidth="1152.0" style="-fx-background-color: #7c7ca5;">
+        <columns>
+          <TableColumn fx:id="expenceDate" prefWidth="127.0" text="Expences Date" />
+          <TableColumn fx:id="shoppingCost" prefWidth="99.0" text="Shopping" />
+            <TableColumn fx:id="communicationCost" prefWidth="122.0" text="Communication" />
+            <TableColumn fx:id="universityCost" prefWidth="102.0" text="University" />
+            <TableColumn fx:id="emergencyCost" minWidth="0.0" prefWidth="92.0" text="Emergency" />
+            <TableColumn fx:id="homeRentCost" minWidth="4.0" prefWidth="102.0" text="Home Rent" />
+            <TableColumn fx:id="homeUtilityCost" minWidth="4.0" prefWidth="112.0" text="Home Utility" />
+            <TableColumn fx:id="homeMealCost" minWidth="4.0" prefWidth="104.0" text="Home meal" />
+            <TableColumn fx:id="foodCost" prefWidth="89.0" text="Food" />
+            <TableColumn fx:id="OtherCost" minWidth="0.0" prefWidth="89.0" text="Other" />
+            <TableColumn fx:id="totalCost" prefWidth="111.0" text="Total cost" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <Button layoutX="37.0" layoutY="759.0" mnemonicParsing="false" onMouseClicked="#backButtonOnMouseClick" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: white;" text="&lt;&lt;Back">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="totalcost" layoutX="1059.0" layoutY="680.0" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: white;" text="     Total Cost">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="427.0" layoutY="680.0" mnemonicParsing="false" onMouseClicked="#resetButtonOnClick" prefHeight="40.0" prefWidth="168.0" style="-fx-background-color: white;" text="Reset">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="610.0" layoutY="680.0" mnemonicParsing="false" onMouseClicked="#deleteButtonOnClick" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: white;" text="Delete a row">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

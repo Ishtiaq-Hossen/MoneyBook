@@ -1,0 +1,41 @@
+.root {
+  -fx-font-size: 20pt ;
+  -fx-font-weight:bold;
+  -fx-font-style: italic bold;
+  
+}
+.root1{
+  -fx-font-size: 15pt ;
+  -fx-font-weight:bold;
+  -fx-font-color:white;
+}
+.root2{
+  -fx-font-size: 15pt ;
+  -fx-font-weight:bold;
+  -fx-font-color:black;
+}
+.label{
+  -fx-font-size: 15pt ;
+  -fx-font-weight:bold;
+  /*-fx-font-color:white;*/
+}
+.button1{
+    -fx-font-size: 15pt ;
+    -fx-font-weight:bold;
+    -fx-background-color: linear-gradient(#1e5be7);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: none;
+    -fx-background-insets: 0;
+    -fx-border-width:0 0 2 0;
+    -fx-border-color: black;
+}
+.card{
+    -fx-background-color:#fff;
+    -fx-background-radius: 10px;
+}
+

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UserScene_01Controller">
+   <left>
+      <VBox prefHeight="737.0" prefWidth="271.0" style="-fx-background-color: f6f6fa;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="176.0" prefWidth="271.0">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="87.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/book.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect></ImageView>
+                  <Label layoutX="107.0" layoutY="63.0" prefHeight="53.0" prefWidth="132.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Money Book" />
+               </children>
+            </Pane>
+            <HBox fx:id="dashBoardHbox" onMouseClicked="#dashboardMouseOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0" style="-fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/dashboard.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="dashBoardLabel" prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Dashboard" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="profileHbox" onMouseClicked="#profileLabelOnClick" prefHeight="63.0" prefWidth="256.0" spacing="20.0" style="-fx-background-radius: 20; -fx-background-color: f6f6fa;">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/user1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="profileLabel" prefHeight="77.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Profile">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="expenceHbox" onMouseClicked="#expencesLableOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/wallet.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="expencesLID" prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Expences" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox onMouseClicked="#downloadLabelOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/download.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="downloadLid" prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Download" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="aboutHbox" onMouseClicked="#aboutLabelOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/info.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="downloadLid1" prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="About" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox onMouseClicked="#LogoutLablOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/turn-off.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Log out" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+            <HBox onMouseClicked="#exitLabelOnClick" prefHeight="50.0" prefWidth="256.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/exit.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="85.0" prefWidth="160.0" style="-fx-font-size: 15;" text="Exit" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="739.0">
+               <children>
+                  <Pane prefHeight="70.0" prefWidth="736.0">
+                     <children>
+                        <TextField fx:id="noteTextField" layoutX="100.0" layoutY="14.0" onKeyReleased="#noteTextFieldKeyReleased" prefHeight="40.0" prefWidth="410.0" promptText="Note here " style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-width: 0 0 3 0;" />
+                        <ImageView fx:id="imageView" fitHeight="41.0" fitWidth="49.0" layoutX="520.0" layoutY="13.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../picture/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="userNameShow" layoutX="574.0" layoutY="9.0" prefHeight="45.0" prefWidth="145.0" text="User Name">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                        <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="50.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../picture/notes.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <AnchorPane fx:id="ap1" prefHeight="662.0" prefWidth="739.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

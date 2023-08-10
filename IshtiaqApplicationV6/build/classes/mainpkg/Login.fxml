@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.LoginController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="321.0" style="-fx-background-color: #3c3c4e;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="155.0" prefWidth="321.0" style="-fx-background-color: #3c3c4e;" styleClass="root" stylesheets="@../values/style.css">
+               <children>
+                  <Text fill="WHITE" layoutX="87.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money Book" wrappingWidth="179.03385162353516">
+                     <effect>
+                        <DropShadow />
+                     </effect></Text>
+               </children>
+            </Pane>
+            <ImageView fitHeight="207.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/book.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="59.0" layoutY="131.0" prefHeight="30.0" prefWidth="220.0" stylesheets="@../values/style.css">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/user.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="37.0" prefWidth="15.0" />
+                  <TextField fx:id="userName" prefHeight="44.0" prefWidth="183.0" promptText="Enter UserName" stylesheets="@../values/style.css">
+                     <styleClass>
+                        <String fx:value="root1" />
+                        <String fx:value="text-field" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="59.0" layoutY="204.0" prefHeight="30.0" prefWidth="220.0" stylesheets="@../values/style.css">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../picture/key.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="37.0" prefWidth="16.0" />
+                  <PasswordField fx:id="userPassword" onKeyPressed="#typeE" prefHeight="44.0" prefWidth="184.0" promptText="Enter Password" styleClass="root1" stylesheets="@../values/style.css" />
+               </children>
+            </HBox>
+            <Button layoutX="126.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#loginButtonOnClick" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #f11e3a;" styleClass="button1" stylesheets="@../values/style.css" text="Login" />
+            <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="273.0" layoutY="10.0" onMouseClicked="#closeImageOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/cancel.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="textChange" fill="#f80101" layoutX="141.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="showPasswordCheckBox" layoutX="105.0" layoutY="260.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#toggleAction" text="Show password text ? " textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="pass_text" layoutX="102.0" layoutY="204.0" prefHeight="46.0" prefWidth="177.0" promptText="Enter Password" styleClass="root2" stylesheets="@../values/style.css" visible="false" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
