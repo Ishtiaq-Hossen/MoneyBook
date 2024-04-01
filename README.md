@@ -9,6 +9,6 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/76255100/215259781-ffc1dd1d-86fd-4c96-8b7d-b3155e40534c.PNG" style="width:600px; height:400px;" />
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zcojC6PWNOQ&t=884s&ab_channel=CodeWithHarry/0.jpg)](https://www.youtube.com/watch?v=zcojC6PWNOQ&t=884s&ab_channel=CodeWithHarry)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zcojC6PWNOQ&t/0.jpg)](https://www.youtube.com/watch?v=zcojC6PWNOQ&t)
 </p>
 
